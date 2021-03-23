@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Socket Ejemplo</title>
+    </head>
+    <body>
+
+        <h1>Ejemplo con Sockets</h1>
+
+        <br>
+
+        <h3 id="usuarioLogeado">Login</h3>
+        <form id="login_form" style="border: 3px groove grey;padding: 5px;max-width: 400px;">
+            <input type="text" id="correo" placeholder="correo" value="" style="width: 47%;">
+            <input type="text" id="usuario" placeholder="usuario" value="" style="width: 47%;">
+            <hr>
+            <input type="button" id="entrar" value="Entrar" onclick="logear()">
+        </form>
+
+        <div id="conte_mensajes" style="background: #ffefd0;max-width: 30%;border: 4px groove #c1c1c1;padding: 5px 5px;margin-top: 5px;">
+            
+        </div>
+
+        <div>
+            <textarea id="mensaje" rows="1" style="width: 30.3%"></textarea>
+            <br>
+            <input id="enviar_mensaje" type="button" onclick="enviar_mensaje()" value="Enviar">
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="funciones_socket.js"></script>
+        <script>
+            
+
+        </script>
+    </body>
+</html>
